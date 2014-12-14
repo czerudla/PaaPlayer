@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/songrow"
+    android:onClick="rowSongClickHandler"
+    android:id="@+id/queue_list"
+    android:longClickable="true">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_media_fullscreen"
+        android:id="@+id/btnDragDrop"
+        android:longClickable="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_weight="80"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Song name.mp3"
+            android:id="@+id/songNameLabel"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="path/to_the/file/inFS/text text text text text something special"
+            android:id="@+id/songPathLabel"
+            android:singleLine="true"
+            android:ellipsize="start"/>
+        </LinearLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:drawable/ic_menu_add"
+        android:id="@+id/btnAddRemoveSong"
+        android:onClick="btnAddRemoveClickHandler"/>
+</LinearLayout>

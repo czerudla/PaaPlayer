@@ -1,0 +1,39 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BCPlayer"
+        android:id="@+id/abAppName"
+        android:gravity="center_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="right"
+        android:id="@+id/abToParentFolderLine">
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:drawable/ic_menu_revert"
+            android:id="@+id/abBtnToParentFolder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="O ÚROVEŇ VÝŠE"
+            android:id="@+id/abToParentFolderTW"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

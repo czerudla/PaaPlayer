@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnPrev"
+        android:background="@drawable/ic_media_previous"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnNext"
+        android:background="@drawable/ic_media_next"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true" />
+
+<!--    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:layout_alignTop="@+id/btnPrev"
+        android:layout_toRightOf="@+id/btnPrev" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/btnForward"
+        android:layout_toLeftOf="@+id/btnNext" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_media_play"
+            android:id="@+id/btnPlay" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_volume_off_small"
+            android:id="@+id/btnMute" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_media_stop"
+            android:text="Stop"
+            android:id="@+id/btnStop" />
+        </LinearLayout>
+
+</RelativeLayout>
